@@ -103,7 +103,7 @@ dataSource:
     jmxExport: true
     driverClassName: org.postgresql.Driver
     dialect: org.hibernate.dialect.PostgreSQLDialect # remove  for Postgresql Extensions
-    dbCreate: create-drop
+    dbCreate: update
     username: 'illusionist'
     password: 'illusion'
 
