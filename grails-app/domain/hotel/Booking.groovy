@@ -1,11 +1,12 @@
 package hotel
 
+import grails.gorm.MultiTenant
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 @ToString
 @EqualsAndHashCode
-class Booking {
+class Booking implements MultiTenant<Booking> {
   String name
   String email
   String telephone
@@ -14,6 +15,11 @@ class Booking {
   int adults = 1
   int children = 0
   int babys = 0
+  String username
+
+  static mapping = {
+    tenantId name: 'username'
+  }
 
   static constraints = {
     name nullable: false, blank: false, maxSize: 255

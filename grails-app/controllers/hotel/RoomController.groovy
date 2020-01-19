@@ -7,7 +7,7 @@ import org.springframework.context.MessageSource
 
 @SuppressWarnings(['FactoryMethodName', 'ReturnNullFromCatchBlock'])
 @CompileStatic
-@Secured('isAuthenticated()')
+@Secured("isAuthenticated()")
 class RoomController implements BeanMessage {
 
     RoomDataService roomDataService

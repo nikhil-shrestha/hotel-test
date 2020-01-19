@@ -5,6 +5,7 @@ import grails.gorm.services.Service
 import groovy.transform.CompileStatic
 
 @CompileStatic
+@CurrentTenant
 @Service(Booking)
 interface BookingDataService {
 

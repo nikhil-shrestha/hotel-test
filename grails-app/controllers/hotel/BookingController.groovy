@@ -7,7 +7,7 @@ import org.springframework.context.MessageSource
 
 @SuppressWarnings(['FactoryMethodName', 'ReturnNullFromCatchBlock'])
 @CompileStatic
-@Secured('isAuthenticated()')
+@Secured("isAuthenticated()")
 class BookingController implements BeanMessage {
 
     BookingDataService bookingDataService

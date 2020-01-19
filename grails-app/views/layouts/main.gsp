@@ -29,6 +29,10 @@
         </ul>
     </div>
 
+    <sec:ifLoggedIn>
+        <a class="dropdown-item" href="/logout">Logout</a>
+    </sec:ifLoggedIn>
+
 </nav>
 
 <g:layoutBody/>

@@ -7,7 +7,7 @@ import org.springframework.context.MessageSource
 
 @SuppressWarnings(['FactoryMethodName', 'ReturnNullFromCatchBlock'])
 @CompileStatic
-@Secured('isAuthenticated()')
+@Secured("isAuthenticated()")
 class ExtraController implements BeanMessage {
 
     ExtraDataService extraDataService

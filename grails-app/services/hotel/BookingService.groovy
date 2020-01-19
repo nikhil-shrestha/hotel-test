@@ -1,9 +1,11 @@
 package hotel
 
+import grails.gorm.multitenancy.CurrentTenant
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 
 @CompileStatic
+@CurrentTenant
 @Transactional
 class BookingService {
 
